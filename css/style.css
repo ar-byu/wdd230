@@ -1,0 +1,67 @@
+html, body {
+    height: 100%
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-box {
+    width: 400px;
+    background-color: burlywood;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 12px 12px 20px gray;
+    margin-bottom: 1em;
+    
+}
+
+h1 {
+    color: peru;
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+h2 {
+    text-shadow: 5px 5px 5px gray;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
+.nav-box {
+    padding: 0.5em;
+}
+
+nav ul li {
+    color: blue;
+    margin-top: 1em;
+    list-style: none;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+a:active {
+    color: aqua;
+    text-decoration: none;
+}
