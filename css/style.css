@@ -14,7 +14,7 @@ body {
 
 .header-box, .footer-box {
     width: 400px;
-    background-color: lightskyblue;
+    background-color: royalblue;
     padding: 0.5em;
     text-align: center;
     border-radius: 25px;
@@ -65,5 +65,9 @@ a:hover {
 .disclaimer {
     font-family: 'Arial', sans-serif;
     font-style: italic;
-    color: grey
+    color: black
+}
+
+footer p {
+    color: white
 }
