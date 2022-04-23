@@ -12,9 +12,9 @@ body {
     vertical-align: middle;
 }
 
-.header-box {
+.header-box, .footer-box {
     width: 400px;
-    background-color: burlywood;
+    background-color: lightskyblue;
     padding: 0.5em;
     text-align: center;
     border-radius: 25px;
@@ -23,27 +23,33 @@ body {
     
 }
 
-h1 {
-    color: peru;
-    font-family: 'Lucida Handwriting', cursive;
+.title {
+    color: black
+}
+
+h1, h2 {
+    color: white;
 }
 
 h2 {
-    text-shadow: 5px 5px 5px gray;
+    text-shadow: 5px 5px 10px gray;
+    font-family: 'Arial Narrow', sans-serif;
 }
 
 hr {
-    border-top: 1px solid black;
+    border-top: 1px solid darkgray;
 }
 
 .nav-box {
-    padding: 0.5em;
+    padding: 0.25em;
+    background-color: skyblue;
 }
 
 nav ul li {
     color: blue;
-    margin-top: 1em;
+    margin-top: 0.25em;
     list-style: none;
+    font-family: 'Arial', sans-serif;
 }
 
 a:link {
@@ -57,11 +63,17 @@ a:visited {
 }
 
 a:hover {
-    color: deepskyblue;
+    color: darkblue;
     text-decoration: none;
 }
 
 a:active {
     color: aqua;
     text-decoration: none;
+}
+
+.disclaimer {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    color: grey
 }
