@@ -57,18 +57,8 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
-    color: green;
-    text-decoration: none;
-}
-
 a:hover {
-    color: darkblue;
-    text-decoration: none;
-}
-
-a:active {
-    color: aqua;
+    color: green;
     text-decoration: none;
 }
 
