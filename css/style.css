@@ -27,6 +27,10 @@ body {
     color: black
 }
 
+h1 {
+    font-family: 'Tapestry', cursive;
+}
+
 h2 {
     text-shadow: 5px 5px 10px gray;
     font-family: 'Arial Narrow', sans-serif;
