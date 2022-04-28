@@ -1,0 +1,14 @@
+@media (min-width: 32.5em) {
+
+    h1 {
+        font-family: 'Tapestry', cursive;
+    }
+
+    .nav-box {
+        border-radius: 25px;
+    }
+
+    nav ul li {
+        margin-top: 0.25em;
+    }
+}
