@@ -5,17 +5,79 @@ html, body {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.design-element-1, .design-element-2, .design-element-3 {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+.example-1, .example-2, .example-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    width: 100%;
+}
+
+h3 {
+    background-color: lightgreen;
+    padding: 1em;
+    font-family: 'Righteous', cursive;
+}
+
+main p, a {
+    padding: 1em;
+    font-family: 'Comfortaa', cursive;
+}
+
+a:link {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+a:visited {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header-box, .footer-box {
+    background-color: lightskyblue;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 1em;
+    font-family: 'Righteous', cursive;
+}
+
+.footer-box {
+    margin-top: 1em;
+}
+
+.footer-box p {
+    font-family: 'Comfortaa', cursive;
 }
 
 @media only screen and (min-width: 37.5em) {
     main {
         grid-template-columns: 1fr 1fr;
     }
+
+    .design-element-3 {
+        grid-column: span 2;
+    }
 }
 
 @media only screen and (min-width: 60em) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .design-element-3 {
+        grid-column: span 1;
     }
 }
