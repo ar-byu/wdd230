@@ -9,7 +9,7 @@ main {
     row-gap: 50px;
 }
 
-.design-element-1, .design-element-2, .design-element-3 {
+div {
     background-color: whitesmoke;
     border-style: solid;
     border-width: 1px;
@@ -28,6 +28,9 @@ h3 {
     background-color: lightgreen;
     padding: 1em;
     font-family: 'Righteous', cursive;
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+    margin-top: -0.5px;
 }
 
 main p, a {
