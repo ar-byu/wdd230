@@ -10,6 +10,7 @@
 
     header {
         display: grid;
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 100px 50px 1fr;
     }
 
@@ -17,9 +18,14 @@
         width: 100px;
     }
 
+    .header-title {
+        margin-left: -100px;
+        font-size: 16px;
+    }
+
     nav {
-        grid-column: 3/4;
-        width: 500px;
+        grid-column: 3/5;
+        width: 600px;
     }
 
     nav ul {
@@ -28,11 +34,19 @@
         flex-direction: row;
     }
 
+    nav ul li {
+        border-right: 1px solid black;
+    }
+
     button {display: none}
 
     .social-links {
-        grid-column: 4;
+        grid-column: 5;
         align-self: center;
+    }
+
+    .current-date-box {
+        grid-column: 1/6;
     }
 
     /* Styling Main */
@@ -84,5 +98,9 @@
         margin-right: 10px;
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .location-info {
+        margin-left: -250px;
     }
 }
