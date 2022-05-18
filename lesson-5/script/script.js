@@ -1,7 +1,6 @@
 const input = document.getElementById('favchap')
 const button = document.querySelector('button')
 const list = document.querySelector('ul')
-const deleteButton = '❌';
 
 button.addEventListener('click', function() {
     const chapter = input.value;
@@ -14,12 +13,12 @@ button.addEventListener('click', function() {
     listItem.appendChild(listText);
     listText.textContent = chapter;
     listItem.appendChild(listButton);
-    listButton.textContent = deleteButton;
+    listButton.textContent = '❌';
     list.appendChild(listItem);
 
-    listBtn.addEventListener('click', () => {
-        list.removeChild(listItem);
-      });
-
-      input.focus();
+    listButton.addEventListener('click', () => {
+      list.removeChild(listItem);
     });
+
+    input.focus();
+  });
