@@ -165,7 +165,8 @@ nav ul.open {display:block;}
 
 main {
     display: grid;
-    grid-template-rows: repeat(4, 4fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 220px 1fr;
     margin-top: 15px;
     margin-bottom: 15px;
     min-height: 150px;
@@ -244,6 +245,7 @@ main div {
 
 .weather-box {
     grid-row: 3;
+    
 }
 
 .spotlight-box {
