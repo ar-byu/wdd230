@@ -24,3 +24,18 @@ document.getElementById("currentDate").innerHTML = todaysDate;
 const modifiedDate = document.lastModified;
 document.getElementById("dateLastModified").innerHTML = modifiedDate;
 document.getElementById("dateLastModifiedMedium").innerHTML = modifiedDate;
+
+// Banner script
+
+let today = new Date().getDay();
+
+const banner = document.getElementById("banner");
+if (today === 1 || today === 2) {
+    banner.style.display = "block";
+}
+
+const close = document.querySelector("#close");
+
+close.addEventListener("click", () => {
+    banner.style.display = "none";
+})
