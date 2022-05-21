@@ -91,7 +91,7 @@
         position: absolute;
         height: 50px;
         top: 100%;
-        left: 55%;
+        left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         background-color: #97D17E;
