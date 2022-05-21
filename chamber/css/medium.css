@@ -32,10 +32,10 @@
     border-radius: 25px;
     width: 50%;
     border: 1px solid rgba(0,0,0,0.3);
-    position: absolute;
+    position: relative;
     height: 50px;
-    top: 30%;
-    left: 70%;
+    top: -50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #97D17E;
