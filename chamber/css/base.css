@@ -226,8 +226,7 @@ main div {
     left: 180px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #97D17E;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
 }
 
