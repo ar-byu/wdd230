@@ -13,17 +13,16 @@
 
     main {
         display: grid;
-        grid-template-rows: repeat(5, 300px);
+        grid-template-rows: repeat(5, fit-content);
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     .hero-box {
         grid-column: 1/4;
-    }
-
-    .hero-box img {
-        min-width: 100%;
-        max-width: 100%;
+        display: inline-block;
+        overflow: hidden;
+        width: fit-content;
+        margin-left: 2%;
     }
 
     .hero-box button {
@@ -34,13 +33,17 @@
     border: 1px solid rgba(0,0,0,0.3);
     position: relative;
     height: 50px;
-    top: -50%;
+    top: -150%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #97D17E;
     font-size: 16px;
     cursor: pointer;
+    }
+
+    .hero-box h1 {
+        top: -500px;
     }
 
     .news-box {

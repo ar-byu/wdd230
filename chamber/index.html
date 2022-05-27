@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>York City Chamber of Commerce | Home </title>
-    <link rel="shortcut icon" href="images/york chamber favicon.ico">
+    <link rel="shortcut icon" href="images/york chamber favicon.webp">
 </head>
 <body>
     <header>
@@ -43,7 +43,14 @@
     </div>
     <main>
         <div class="hero-box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/York_Pennsylvania_-002.JPG" alt="Street view of trees in downtown York">
+            <!--- <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/York_Pennsylvania_-002.JPG" alt="Street view of trees in downtown York"
+            srcset="images/256pxYork_Pennsylvania_-002.jpg 400w, images/512pxYork_Pennsylvania_-002.jpg 800w, images/York_Pennsylvania_-002.jpg 1100w"> --->
+            <picture>
+                <source srcset="images/Inkedwdd230-org-large.jpg" media="(min-width: 1200px)">
+                <source srcset="images/Inkedwdd230-org-medium.jpg" media="(min-width: 800px)">
+                <source srcset="images/Inkedwdd230-org-small.jpg" media="(min-width: 300px)">
+                <img src="images/wdd230-org.jpg" alt="a picture of a meeting">
+            </picture>
             <h1>Welcome to York</h1>
             <button type="button" id="join-button" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Join Us!</button>
         </div>
@@ -59,7 +66,12 @@
             <p>We look forward to seeing you!</p>
         </div>
         <div class="weather-box">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/39d96n76d73/york/" data-label_1="YORK" data-label_2="WEATHER" data-days="3" data-theme="original" data-basecolor="#72BDFF" data-highcolor="#ad1303" data-lowcolor="#03062e" data-raincolor="#1b6fe6" >YORK WEATHER</a>
+            <h4>Weather</h4>
+            <p class="weather-display">&#9729; <span id="temperature">67</span>F</p>
+            <hr>
+            <p>Cloudy</p>
+            <p>Wind Speed: <span id="wind-speed">4</span> mph</p>
+            <p>Temperature with Wind Chill: <span id="wind-chill"> </span></p>
         </div>
         <div class="join-box">
             <button type="button" id="join-button" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Join Us!</button>
@@ -119,4 +131,5 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </html>
