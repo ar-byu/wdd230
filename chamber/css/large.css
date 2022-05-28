@@ -56,7 +56,7 @@
         margin: 30px;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: repeat(3, 3fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .hero-box {

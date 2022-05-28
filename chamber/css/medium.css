@@ -21,8 +21,7 @@
         grid-column: 1/4;
         display: inline-block;
         overflow: hidden;
-        width: fit-content;
-        margin-left: 2%;
+        margin-left: 3%;
     }
 
     .hero-box button {

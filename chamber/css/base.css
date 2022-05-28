@@ -195,9 +195,12 @@ main div {
     background-color: transparent;
     border: none;
     display: inline-block;
-    width: fit-content;
-    margin-left: 1%;
     box-shadow: none;
+    max-width: 100%;
+}
+
+.hero-box img {
+    max-width: 100%;
 }
 
 .hero-box h1 {
