@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>York City Chamber of Commerce | Discover York</title>
+    <link rel="shortcut icon" href="images/york chamber favicon.webp">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/york city commerce logo.png" alt="The York City Chamber of Commerce logo" href="index.html">
+        <div class="header-title">
+            <h1>York City</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+    <div class="current-date-box"><span id="currentDate"></span></div>
+    <div class="social-links">
+        <a href="https://www.facebook.com">
+            <img src="images/facebook.jpg" alt="Facebook logo">
+        </a>
+        <a href="https://www.twitter.com">
+            <img src="images/twitter.jpg" alt="Twitter logo">
+        </a>
+    </div>
+    <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover York</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. <button id="close">X</button>
+    </div>
+    <div class="local-storage">Welcome! <span id="last-visited"> </span>
+    </div>
+    <main class="discover">
+        <div class="market">
+            <a href="https://www.centralmarketyork.com/">
+                <img src="images/1024px-Central_Market_York_PA.jpg" alt="York Central Market"
+                loading="auto">
+            </a>
+            <p>York's Central Market opened in 1888, and is the only farmer's market in York to be standing in its original location.</p>
+        </div>
+        <div class="population">
+            <img src="images/York_County_Pennsylvania_incorporated_and_unincorporated_areas_York_highlighted.jpg"
+            alt="A map of York County, with the city of York highlighted"
+            loading="auto">
+            <p>York County is 911 square miles large, almost a third of which is farmland.</p>
+            <p>The population of York County is 43-40,000 persons based on recent estimates.</p>
+        </div>
+        <div class="history">
+            <a href="https://www.yorkhistorycenter.org/york-pa-museums">
+            <img src="images/placeholder.jpg"
+            alt="A photo of the Golden Plough Tavern"
+            loading="lazy"
+            data-src="images\1024px-Golden_Plow_York_PA.jpg">
+            </a>
+            <p>York was briefly the capital of the United States, and was where the term "United States of America" was coined.</p>
+        </div>
+        <div class="fairground">
+            <a href="https://www.yorkstatefair.com/">
+            <img src="images/placeholder.jpg"
+            data-src="images/1024px-York_PA_Fairgrounds.jpg"
+            alt="Front entrance of the York Fairgrounds"
+            loading="lazy">
+            </a>
+            <p>York is home to one of the oldest fairs in the country, having started in 1765.</p>
+        </div>
+        <div class="snacks">
+            <img src="images/placeholder.jpg"
+            data-src="images/1024Stauffers.jpg"
+            alt="A package of Stauffer's Original Animal crackers"
+            loading="lazy">
+            <p>York is also home to several widespread snack food companies, such as Stauffer's, known for their animal crackers, and Snyder's of Hanover.</p>
+        </div>
+    </main>
+    <footer>
+        <img src="images/york city commerce logo.png" alt="The York City Chamber of Commerce logo" href="index.html">
+    <div class="location-info">
+        <p>York City Chamber of Commerce</p>
+        <p>123 N Queen St<p>
+        <p>York, Pennsylvania 17401</p>
+    </div>
+    <div class="contact-info">
+        <p>info@yorkchamber.org</p>
+        <p>+(717) 123 2468</p>
+        <p>Location Map</p>
+    </div>
+    <div class="copyright-box">
+        <div class="small-copyright">
+            <p>&copy; <span id="currentYear"></span> York Chamber of Commerce</p>
+            <p><strong>Anna Rector</strong></p>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="dateLastModified"></span></p>
+        </div>
+        <div class="medium-copyright">
+            <p>&copy; <span id="currentYearMedium"></span> York Chamber of Commerce | <strong>Anna Rector</strong> | WDD 230 Project</p>
+            <p>Last Modification: <span id="dateLastModifiedMedium"></span></p>
+        </div>
+    </div>
+    </footer>
+</body>
+<script src="js/scripts.js"></script>
+</html>

@@ -59,6 +59,40 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .discover {
+        grid-template-columns: none;
+        grid-template-rows: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .discover div {
+        margin-left: 2%;
+    }
+
+    .discover img {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .population img {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .discover img:hover {
+        width: 100%;
+        transition: width 2s, height 2s;
+        margin-left: 0px;
+    }
+
+    .population img:hover {
+        margin-left: 25%;
+        width: 50%;
+        transition: width 2s, height 2s;
+    }
+
     .hero-box {
         grid-column: 2;
         grid-row: 1/3;

@@ -17,6 +17,21 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .discover {
+        grid-template-columns: none;
+    }
+
+    .discover img {
+        width: 100%;
+        margin-left: -0.2%;
+    }
+
+    .population img {
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+
     .hero-box {
         grid-column: 1/4;
         display: inline-block;
