@@ -367,7 +367,7 @@ main div {
     height: 50px;
 }
 
-.submit-button {
+.submit-button, .return {
     display: block;
     background-color: #97D17E;
     border-radius: 25px;
@@ -378,6 +378,15 @@ main div {
     margin-left: 10%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.thanks {
+    grid-template-columns: none;
+    grid-template-rows: none;
+}
+
+.thanks div {
+    height: 200px;
 }
 
 /* Footer Styling */
