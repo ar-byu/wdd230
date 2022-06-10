@@ -110,6 +110,12 @@
         grid-row: 5;
     }
 
+    .join {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        grid-gap: 2%;
+    }
+
     /* Styling Footer */
 
     footer {

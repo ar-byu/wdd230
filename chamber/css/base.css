@@ -317,6 +317,69 @@ main div {
     margin-left: 15%;
 }
 
+.join {
+    grid-template-rows: .5fr 1fr;
+}
+
+.join h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.join ul {
+    text-align: center;
+}
+
+.join ul li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+}
+
+.join form {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.join form legend {
+    padding: .5rem;
+}
+
+.join form input {
+    margin-bottom: 10px;
+}
+
+.join form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    margin-left: 2%;
+}
+
+.join form label.top input {
+    display: block;
+    height: 50px;
+    width: 80%;
+    margin-left: 2%;
+}
+
+.join form label.sbs {
+    display: block;
+    height: 50px;
+}
+
+.submit-button {
+    display: block;
+    background-color: #97D17E;
+    border-radius: 25px;
+    width: 80%;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Footer Styling */
 
 footer {
