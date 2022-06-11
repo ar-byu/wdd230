@@ -355,16 +355,23 @@ main div {
     margin-left: 2%;
 }
 
+.join form label.top {
+    margin-left: 2%;
+}
+
 .join form label.top input {
     display: block;
     height: 50px;
     width: 80%;
-    margin-left: 2%;
 }
 
 .join form label.sbs {
     display: block;
     height: 50px;
+}
+
+.join form :required:invalid {
+    background-color: lightcoral;
 }
 
 .submit-button, .return {
