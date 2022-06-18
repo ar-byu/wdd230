@@ -34,7 +34,7 @@
         <ul id="primaryNav">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover York</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -44,64 +44,12 @@
     </div>
     <div class="local-storage">Welcome! <span id="last-visited"> </span>
     </div>
-    <main class="join">
-        <div>
-            <h2>Membership Tiers and Benefits</h2>
-            <h3>NP Membership</h3>
-            <ul>
-                <li>For nonprofit organizations only</li>
-                <li>No fees</li>
-                <li>Spotlight box advertising</li>
-            </ul>
-            <h3>Bronze Membership</h3>
-            <ul>
-                <li>$50/month fee</li>
-                <li>Spotlight box advertising</li>
-                <li>10% discounted event space</li>
-            </ul>
-            <h3>Silver Membership</h3>
-            <ul>
-                <li>$100/month fee</li>
-                <li>Spotlight box advertising</li>
-                <li>15% discounted event space</li>
-                <li>Once a month complementary training course</li>
-            </ul>
-            <h3>Gold Membership</h3>
-            <ul>
-                <li>$150/month fee</li>
-                <li>Spotlight box advertising</li>
-                <li>15% dscounted event space</li>
-                <li>Once a month complementary training course</li>
-                <li>Discover page advertising</li>
-                <li>Front page event advertising</li>
-            </ul>
+    <main class="directory">
+        <div class="buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
         </div>
-        <div>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label class="top">First Name*: <input type="text" name="fname" required></label>
-                <label class="top">Last Name*: <input type="text" name="lname" required></label>
-                <label class="top">Occupation Title: <input type="text" name="title" pattern="[A-Za-z- ]{7,}"></label>
-                <label class="top">Email*: <input type="email" name="email" placeholder="someone@example.com" required></label>
-                <label class="top">Phone*: <input type="tel" name="tel" placeholder="1234562468" required></label>
-                <label class="top">Business Name*: <input type="text" name="title" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership - No Fee</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership - $50/mo</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership - $100/mo</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership - $150/mo</label>
-            </fieldset>
-            <fieldset>
-                <legend>Business Description</legend>
-                <label class="top">What is your business?<input type="textarea" name="description"></label>
-                <input type="datetime-local" name="currentdate" hidden>
-            </fieldset>
-            <input type="submit" value="Join the Chamber" class="submit-button">
-        </form>
-        </div>
+        <div class="grid"></div>
     </main>
     <footer>
             <img src="images/york city commerce logo.png" alt="The York City Chamber of Commerce logo" href="index.html">

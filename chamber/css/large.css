@@ -192,4 +192,12 @@
     .location-info {
         margin-left: -250px;
     }
+
+    .list section {
+        flex-direction: row;
+    }
+
+    #grid, #list {
+        margin-left: 25%;
+    }
 }

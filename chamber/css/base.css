@@ -396,6 +396,88 @@ main div {
     height: 200px;
 }
 
+.buttons {
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+#grid, #list {
+    background-color: #97D17E;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.directory {
+    grid-template-columns: none;
+    grid-template-rows: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.grid img {
+    max-width: 70%;
+    min-width: 50%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.grid section {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #72BDFF;
+    box-shadow: 5px 5px 7px rgba(0 0 0 / 0.3);
+    padding: 10%;
+}
+
+.grid h3 {
+    display: none;
+}
+
+section a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(251, 245, 236);
+}
+
+.list section:nth-child(even) {
+    background-color: #c5e4ff;
+}
+
+.list img {
+    display: none;
+}
+
+.list a {
+    margin-top: 0.75%;
+}
+
 /* Footer Styling */
 
 footer {

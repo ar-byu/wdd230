@@ -116,6 +116,10 @@
         grid-gap: 2%;
     }
 
+    #grid, #list {
+        margin-left: 22%;
+    }
+
     /* Styling Footer */
 
     footer {

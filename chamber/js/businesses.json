@@ -1,0 +1,76 @@
+{
+    "businesses": [
+        {
+            "name": "Mommy's Little Rascals",
+            "image": "https://lh3.googleusercontent.com/6hMk-3W7FepBz9BF9RJ3U250UilfI4Polb5xQdLNuF9cGorZECYyKLtkiwAvkod5BA8Sjf32NUN5N7OLCetCsd0bA2wzo7h1Ev0mZGGNGynuUdig7CeSrys=s200",
+            "address": "4159 N George Street Extension, Manchester, PA 17345",
+            "phone": "(717) 266-3680",
+            "website": "http://www.mlrconsignment.com/",
+            "membership": "bronze"
+        },
+        {
+            "name": "Empowered Creative",
+            "image": "https://www.empoweredcreative.co/wp-content/uploads/2019/09/web-navherofinal.png",
+            "address": "18 S Belmont St Suite 1, York, PA 17403",
+            "phone": "(717) 495-6361",
+            "website": "https://www.empoweredcreative.co/",
+            "membership": "silver"
+        },
+        {
+            "name": "DesignBots Media Firm",
+            "image": "http://www.designbotsmediafirm.com/wp-content/uploads/2021/02/logo_black.png",
+            "address": "147 W Market St, York, PA 17401",
+            "phone": "(888) 400-7316",
+            "website": "http://www.designbotsmediafirm.com/",
+            "membership": "silver"
+        },
+        {
+            "name": "Brooks-Huff Tire & Auto Centers",
+            "image": "https://brookshuff.com/img/logo.png",
+            "address": "95 Sunset Dr, Manchester, PA 17345",
+            "phone": "(717) 266-5200",
+            "website": "https://brookshuff.com/",
+            "membership": "bronze"
+        },
+        {
+            "name": "Leg Up Farmer's Market",
+            "image": "https://secureservercdn.net/198.71.233.187/pxs.975.myftpupload.com/wp-content/uploads/2020/11/LegUpFarmersMarket_600x464.png?time=1655140704",
+            "address": "3100 N George St, York, PA 17406",
+            "phone": "(717) 893-5998",
+            "website": "https://legupfarmersmarket.com/",
+            "membership": "gold"
+        },
+        {
+            "name": "Confidence Boutique and Day Spa",
+            "image": "https://cdn.shopify.com/s/files/1/0515/2076/6107/files/confidence_NEW_LOGO1_300x300.png?v=1610058391",
+            "address": "225 S George St, York, PA 17401",
+            "phone": "(717) 843-2883",
+            "website": "https://shopconfidence.com/",
+            "membership": "silver"
+        },
+        {
+            "name": "The Curious Little Playhouse",
+            "image": "https://img1.wsimg.com/isteam/ip/94710fe3-386a-4625-a42c-3c1090abe8e5/logo/e25f8153-9527-4ca7-a132-ca9c9dc5b1ea.jpg/:/rs=h:75,cg:true,m/qt=q:95",
+            "address": "41 W Market St, York, PA 17401",
+            "phone": "(717) 430-6269",
+            "website": "https://curiouslittleplayhouse.com/",
+            "membership": "silver"
+        },
+        {
+            "name": "Central Market House",
+            "image": "https://images.squarespace-cdn.com/content/v1/51f68537e4b04b5d7e65e4ba/1cca6229-2367-46be-9b2a-227e43e30908/cmy-logo-green.png?format=1500w",
+            "address": "34 W Philadelphia St, York, PA 17401",
+            "phone": "(717) 848-2243",
+            "website": "https://www.centralmarketyork.com/",
+            "membership": "gold"
+        },
+        {
+            "name": "Stauffer's Cookie Outlet",
+            "image": "https://cdn.shopify.com/s/files/1/0612/4673/4592/files/logo_240x.png?v=1649761317",
+            "address": "375 S Belmont St, York, PA 17403",
+            "phone": "(717) 848-6630",
+            "website": "https://stauffers.com/",
+            "membership": "gold"
+        }
+    ]
+}

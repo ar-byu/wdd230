@@ -90,3 +90,67 @@ if (lastVisited) {
 }
 
 document.getElementById("last-visited").textContent = lastVisitedMessage;
+
+// Cards and List Script
+
+const requestURL = 'js/businesses.json';
+const cards = document.querySelector('.cards');
+
+fetch(requestURL) 
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+      const business = jsonObject['businesses'];
+      business.forEach(displayBusiness);
+  })
+;
+
+function displayBusiness(business) {
+  let card = document.createElement('section');
+  let logo = document.createElement('img');
+  let name = document.createElement('h3')
+  let address = document.createElement('p');
+  let phone = document.createElement('p');
+  let website = document.createElement('a');
+
+  logo.setAttribute('src', business.image);
+  logo.setAttribute('alt', `Logo for ${business.name}`);
+  logo.setAttribute('loading', 'lazy');
+
+  name.textContent = `${business.name}`
+  address.textContent = `${business.address}`;
+  phone.textContent = `${business.phone}`;
+  website.textContent = `${business.website}`;
+  website.setAttribute('href', business.website);
+
+  card.appendChild(name);
+  card.appendChild(logo);
+  card.appendChild(address);
+  card.appendChild(phone);
+  card.appendChild(website);
+
+  if (document.querySelector('.grid')) {
+  document.querySelector('div.grid').appendChild(card);
+  }
+  else {
+    document.querySelector('div.list').appendChild(card);
+  }
+}
+
+// Grid/List Toggle
+
+const gridButton = document.getElementById('grid');
+const listButton = document.getElementById('list');
+const display = document.querySelector('.grid');
+
+gridButton.addEventListener('click', () => {
+  display.removeAttribute('class', 'list');
+  display.setAttribute('class', 'grid');
+
+})
+
+listButton.addEventListener('click', () => {
+  display.removeAttribute('class', 'grid')
+  display.setAttribute('class', 'list')
+})
