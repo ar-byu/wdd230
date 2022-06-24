@@ -64,11 +64,13 @@
         </div>
         <div class="weather-box">
             <h4>Weather</h4>
-            <p class="weather-display">&#9729; <span id="temperature">67</span>F</p>
+            <p class="display-weather"><img src="" alt="" id="weather-icon"><span id="current-temp"></span>F</p>
+            <p><small>Feels Like: <span id="feels-like"></span></small>F</p>
+            <p id="weather-desc"></p>
             <hr>
-            <p>Cloudy</p>
-            <p>Wind Speed: <span id="wind-speed">4</span> mph</p>
-            <p>Temperature with Wind Chill: <span id="wind-chill"> </span></p>
+            <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
+            <p><small>Weather provided by OpenWeatherMap.com</small></p>
         </div>
         <div class="join-box">
             <button type="button" id="join-button" onclick="location.href='join.html'">Join Us!</button>
