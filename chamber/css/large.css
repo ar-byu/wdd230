@@ -51,7 +51,7 @@
 
     /* Styling Main */
 
-    main {
+    main, .contact {
         max-width: 1200px;
         margin: 30px;
         display: grid;
@@ -199,5 +199,19 @@
 
     #grid, #list {
         margin-left: 25%;
+    }
+
+    .contact {
+        grid-gap: 10px;
+        grid-template-rows: 1fr;
+    }
+
+    .info {
+        grid-column: 3;
+    }
+
+    .contact-form {
+        grid-column: 2;
+        grid-row: 1;
     }
 }

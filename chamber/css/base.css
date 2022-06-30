@@ -190,6 +190,10 @@ main {
     transition: 0.5s linear;
 }
 
+.discover h2 {
+    text-align: center;
+}
+
 .discover img--loading {
     opacity: 0;
     visibility: hidden;
@@ -325,6 +329,11 @@ main div {
     grid-template-rows: .5fr 1fr;
 }
 
+.contact {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+
 .join h2 {
     text-align: center;
     margin-top: 10px;
@@ -340,7 +349,7 @@ main div {
     padding: 1%;
 }
 
-.join form {
+.join form, .contact form {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
@@ -349,33 +358,58 @@ main div {
     padding: .5rem;
 }
 
-.join form input {
+.join form input, .contact form input {
     margin-bottom: 10px;
 }
 
-.join form label.top, form div {
+.join form label.top, form div, .contact form label.top {
     display: block;
     padding-top: 1rem;
     margin-left: 2%;
 }
 
-.join form label.top {
+.contact form label.top input {
+    margin-top: 1%;
+}
+
+.contact form label.top input {
+    margin: -0.5%;
+    margin-top: 0.5%;
+}
+
+.join form label.top, .contact form label.top {
     margin-left: 2%;
 }
 
-.join form label.top input {
+.join form label.top input, .contact form label.top input {
     display: block;
     height: 50px;
     width: 80%;
 }
 
-.join form label.sbs {
+.join form label.sbs, .contact form label.sbs {
     display: block;
     height: 50px;
 }
 
-.join form :required:invalid {
-    background-color: lightcoral;
+.join form :required:invalid, .contact form :required:invalid {
+    border: 2px solid lightcoral;
+}
+
+.contact form input {
+    margin-left: 2%;
+}
+
+.contact form label.sbs {
+    margin-top: 1%;
+}
+
+.contact form label.sbs input {
+    margin-left: 2%;
+}
+
+.contact textarea {
+    margin: 2%;
 }
 
 .submit-button, .return {

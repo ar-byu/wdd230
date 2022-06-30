@@ -44,13 +44,40 @@
     </div>
     <div class="local-storage">Welcome! <span id="last-visited"> </span>
     </div>
-    <main class="thanks">
+    <main class="contact">
         <div>
-            <h1>Thank you for joining the York Chamber of Commerce!</h1>
-            <p>We'll contact you for payment details within 3-5 business days.</p>
-            <p>Have a lovely day!</p>
-            <button type="button" class="return" onclick="location.href='join.html'">Back</button>
+            <h1>Visit Us</h1>
+            <p>York City Chamber of Commerce</p>
+            <p>123 N Queen St<p>
+            <p>York, Pennsylvania 17401</p>
+            <h1>Hours</h1>
+            <p>Monday - Thursday: 9:00 AM to 5:00 PM</p>
+            <p>Friday: By appointment only</p>
         </div>
+        </div>
+        <div class="info">
+            <h1>Contact Information</h1>
+            <p>For general inquiries, please contact Teresa Jameson at +(717) 123 2468 or info@yorkchamber.org</p>
+            <p>For questions about joining the chamber or accessing specific member resources or benefits, please contact customers@yorkchamber.org</p>
+            <p>For sponsorship or event inquiries, please contact us at events@yorkchamber.org</p>
+            <p>We look forward to hearing from you!</p>
+        </div>
+        <div class="contact-form">
+            <form>
+                <h1>Contact Us</h1>
+                <label class="top">First Name*: <input type="text" name="fname" required></label>
+                <label class="top">Last Name*: <input type="text" name="lname" required></label>
+                <label class="top">Email*: <input type="email" name="email" placeholder="someone@example.com" required></label>
+                <label class="top">Phone*: <input type="tel" name="tel" placeholder="1234562468" required></label>
+                <label class="top">Company Name: <input type="text" name="company"></label>
+                <label class="top">Are you a Chamber member?*</label>
+                <label class="sbs"><input type="radio" name="membership" required> Yes</label>
+                <label class="sbs"><input type="radio" name="membership"> No</label>
+                <label class="sbs"><input type="radio" name="membership"> Not Sure</label>
+                <label class="top">What is your question for the York City Chamber of Commerce?*</label>
+                <textarea name="message" rows="10" cols="40" required></textarea>
+                <input type="submit" value="Ask Question" class="submit-button" onclick="return confirm('Thank you for submitting your question!')">
+            </form>
     </main>
     <footer>
             <img src="images/york city commerce logo.png" alt="The York City Chamber of Commerce logo" href="index.html">
