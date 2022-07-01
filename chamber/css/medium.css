@@ -36,7 +36,6 @@
         grid-column: 1/4;
         display: inline-block;
         overflow: hidden;
-        margin-left: 3%;
     }
 
     .hero-box button {
@@ -49,6 +48,7 @@
     height: 50px;
     top: -150%;
     left: 50%;
+    bottom: 3%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #97D17E;
@@ -58,6 +58,17 @@
 
     .hero-box h1 {
         top: -500px;
+    }
+
+    .hero-box img, .discover img {
+        display: flex;
+        width: 100%;
+    }
+
+    .population img {
+        display: flex;
+        width: 70%;
+        margin-left: 10%;
     }
 
     .news-box {

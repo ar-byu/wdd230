@@ -46,8 +46,11 @@
     </div>
     <main>
         <div class="hero-box">
-            <img src="images/York_Pennsylvania_-002.JPG" alt="Street view of trees in downtown York"
-            srcset="images/256pxYork_Pennsylvania_-002.JPG 400w, images/512pxYork_Pennsylvania_-002.JPG 800w, images/York_Pennsylvania_-002.JPG 1100w">
+            <picture>
+                <source media="(max-width: 512px)" srcset="images/256pxYork_Pennsylvania_-002.JPG">
+                <source media="(max-width: 512px)" srcset="images/512pxYork_Pennsylvania_-002.JPG">
+                <img src="images/York_Pennsylvania_-002.JPG" alt="Street view of trees in downtown York">
+            </picture>
             <h1>Welcome to York</h1>
             <button type="button" id="join-button" onclick="location.href='join.html'">Join Us!</button>
         </div>

@@ -149,6 +149,7 @@ nav ul.open {display:block;}
     text-align: center;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Styling Banners */
@@ -159,6 +160,7 @@ nav ul.open {display:block;}
     border: 1px solid rgba(0,0,0,0.3);
     margin-top: 10px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .local-storage {
@@ -167,6 +169,7 @@ nav ul.open {display:block;}
     border: 1px solid rgba(0,0,0,0.3);
     margin-top: 10px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Styling Main*/
@@ -254,6 +257,16 @@ main div {
     padding-top: 5px;
 }
 
+.hero-box img, .discover img {
+    display: flex;
+    width: 100%;
+}
+
+.population img {
+    display: flex;
+    width: 80%;
+}
+
 .hero-box button {
     display: block;
     background-color: #97D17E;
@@ -329,6 +342,10 @@ main div {
     grid-template-rows: .5fr 1fr;
 }
 
+.join p {
+    padding: 2%;
+}
+
 .contact {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
@@ -366,6 +383,10 @@ main div {
     display: block;
     padding-top: 1rem;
     margin-left: 2%;
+}
+
+.contact h1, p {
+    padding: 5%;
 }
 
 .contact form label.top input {
