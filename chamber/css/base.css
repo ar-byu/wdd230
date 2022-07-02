@@ -316,6 +316,11 @@ main div {
     min-height: 500px;
 }
 
+.spotlight-icon {
+    width: 200px;
+    margin-left: 15%;
+}
+
 .spotlight-box div {
     margin-left: 10px;
     margin-right: 10px;
