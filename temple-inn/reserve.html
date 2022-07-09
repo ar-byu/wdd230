@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/temple-inn-favicon.webp">
+    <title>Booking | Temple Inn & Suites</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/temple-inn-logo.png" alt="Temple Inn & Suites logo" href="index.html">
+        <h1>Temple Inn and Suites</h1>
+        <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reserve.html">Reserve A Room</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="services.html">Hotel Services</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+       <h1>Reserve Your Room</h1>
+       <div class="room-info">
+        <h2>Temple Patron Rooms</h2>
+        <h2>Missionary Rooms</h2>
+       </div>
+       <h2>Booking</h2>
+       <div class="reservation-form">
+        <form>
+            <fieldset>
+                <legend>Booking Information</legend>
+                <fieldset>
+                    <legend>Temple Patrons</legend>
+                    <label for="guest-checkin">Check-In Date</label>
+                    <input type="date" id="guest-checkin" name="date">
+                    <label for="adults"># of Adults</label>
+                    <input type="number" id="adults" name="number" placeholder="ex. 2">
+                    <label for="children"># of Children (if applicable)</label>
+                    <input type="number" id="children" name="number" placeholder="ex. 2">
+                    <label for="guest-location">Temple</label>
+                        <select id="guest-location" name="temples">
+                            <option value="none">Select option...</option>
+                            <option value="philadelphia">Philadelphia, PA</option>
+                            <option value="washington">Washington D.C.</option>
+                            <option value="manhattan">Manhattan, NY</option>
+                            <option value="palmyra">Palmyra, NY</option>
+                            <option value="boston">Boston, MA</option>
+                            <option value="hartford">Hartford, CT</option>
+                        </select>
+                    <input type="radio" id="basic" value="basic">
+                    <label for="basic">Standard Room - $75/night</label>
+                    <input type="radio" id="middle" value="middle">
+                    <label for="middle">Quad Room - $100/night</label>
+                    <input type="radio" id="minisuite" value="minisuite">
+                    <label for="minisuite">Mini Suite - $150/night</label>
+                    <input type="radio" id="suite" value="suite">
+                    <label for="suite">Full Suite - $200/night</label>
+                    <label for="nights">Number of Nights</label>
+                    <input type="number" id="nights" placeholder="1">
+                </fieldset>
+                <fieldset>
+                    <legend>Temple Missionaries</legend>
+                    <label for="mission-arrival">Check-In Date</label>
+                    <input type="date" id="mission-arrival" name="date">
+                    <label for="mission-checkout">Mission Duration (in months)</label>
+                    <input type="number" id="mission-checkout" name="date">
+                    <label for="mission-location">Temple</label>
+                        <select id="mission-location" name="temples">
+                            <option value="none">Select option...</option>
+                            <option value="philadelphia">Philadelphia, PA</option>
+                            <option value="washington">Washington D.C.</option>
+                            <option value="manhattan">Manhattan, NY</option>
+                            <option value="palmyra">Palmyra, NY</option>
+                            <option value="boston">Boston, MA</option>
+                            <option value="hartford">Hartford, CT</option>
+                        </select>
+                        <input type="radio" id="bsc-suite" value="basic">
+                        <label for="bsc-suite">Basic Suite - $750/month</label>
+                        <input type="radio" id="stdrd-suite" value="standard">
+                        <label for="stdrd-suite">Standard Suite - $1500/month</label>
+                        <input type="radio" id="lux-suite" value="luxury">
+                        <label for="lux-suite">Luxury Suite - $3000/month</label>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Billing Information</legend>
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John" pattern="[A-Za-z]" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" placeholder="Smith" pattern="[A-Za-z]" required>
+                    <label for="adr">Street Address:</label>
+                    <input type="text" id="adr" name="address" placeholder="123 Example Street" pattern="[A-Za-z0-9]" required>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="New York" pattern="[A-Za-z]" required>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" placeholder="NY" pattern="[A-Za-z]{2}" required>
+                    <label for="zip">Zipcode:</label>
+                    <input type="text" id="zip" name="zip" placeholder="17406" pattern="[0-9]" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="tel" placeholder="1234562468" pattern="[0-9]{10}">
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label for="cname">Name On Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John Smith" pattern="[A-Za-z]" required>
+                    <label for="ccnum">Card Number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1234-5678-1111-2222" required>
+                    <label for="expmonth">Expiry Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                    <label for="expyear">Expiry Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2023" required>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="111" required>
+                </fieldset>
+            </fieldset>
+            <input type="submit" value="Book Your Stay" class="submit-button" onclick="return confirm('Thank you for choosing Temple Inn & Suites! You will receive an email confirmation shortly.')">
+        </form>
+       </div>
+    </main>
+    <footer>
+        <img src="images/temple-inn-logo.png" alt="Temple Inn & Suites logo">
+        <div class="location">
+            <p>4800 Montgomery Ln #300</p>
+            <p>Bethesda, MD 20814</p>
+            <a href="https://goo.gl/maps/faptK9d2nmqTWnc7A">Google Maps</a>
+        </div>
+        <div class="copyright-box">
+            <div class="small-copyright">
+                <p>&copy; <span id="currentYear"></span> Temple Inn & Suites</p>
+                <p><strong>Anna Rector</strong></p>
+                <p>WDD 230 Project</p>
+                <p>Last Modification: <span id="dateLastModified"></span></p>
+            </div>
+            <div class="medium-copyright">
+                <p>&copy; <span id="currentYearMedium"></span> Temple Inn & Suites | <strong>Anna Rector</strong> | WDD 230 Project</p>
+                <p>Last Modification: <span id="dateLastModifiedMedium"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
