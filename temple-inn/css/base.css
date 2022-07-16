@@ -1,0 +1,150 @@
+/* Spacing Cleaning, Body Styling */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+/* Header and Footer Styling */
+
+header,
+footer {
+	background-color: steelblue;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header {
+    display: grid;
+    
+    align-items: center;
+    justify-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+header img {
+    width: 75px;
+}
+
+footer img {
+    width: 150px;
+}
+
+.header-title {
+    font-size: 10px;
+    width: 160px;
+    padding: 5px;
+}
+
+header img, footer img {
+    border-radius: 50%;
+}
+
+/* Nav */
+
+nav {
+    margin-top: 1%;
+    background-color: beige;
+    grid-column: 1/5;
+    width: 100%;
+    align-self: center;
+}
+
+nav:active {
+    border: 1px solid black;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    border: 1px solid black;
+    background-color: beige;
+    align-self: center;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding-top: 6px;
+    flex: 1 1 auto;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    height: 45px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: rgba(0,0,0,0.3);
+    flex: 1 1 auto;
+}
+
+button {
+    padding: 0;
+    width: 100%;
+    height: 40%;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav ul {display:none;}
+nav ul.open {display:block;}
+
+#hamburger-button span:nth-child(1) {display: block;}
+#hamburger-button span:nth-child(2) {display: none;}
+
+#hamburger-button.open span:nth-child(1) {display: none;}
+#hamburger-button.open span:nth-child(2) {display: block;}
+
+/* Main */
+
+.home-page div {
+    border: 1px solid #555;
+    margin-top: 1%;
+    background-color: ivory;
+}
+
+.hotel-info {
+    margin-bottom: 1%;
+}
+
+.hero-box {
+    background-color: none;
+    border: none;
+}
+
+.hero-box img {
+    max-width: 100%;
+}

@@ -20,25 +20,50 @@
         <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
     <nav>
         <ul id="primaryNav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="reserve.html">Reserve A Room</a></li>
             <li><a href="temples.html">Temples</a></li>
             <li><a href="services.html">Hotel Services</a></li>
         </ul>
     </nav>
     </header>
-    <main>
+    <main class="home-page">
+        <div id="banner">
+            <p>The current weather conditions might not be ideal for travel. Please be careful.</p><button id="close">X</button>
+        </div>
+        <h1>Temple Inn and Suites</h1>
         <div class="hero-box">
-            <h1>Reserve Your Room</h1>
+            <picture>
+                <source media="(max-width: 512px)" srcset="images/256-Philadelphia-Temple.jpg">
+                <source media="(max-width: 512px)" srcset="images/512-Philadelphia-Temple.jpg">
+                <img src="images/1028-Philadelphia-Temple.jpg" alt="Philadelphia Pennsylvania Temple">
+            </picture>
         </div>
         <div class="weather-box">
             <h2>Weather</h2>
+            <p>New York</p>
+            <p>Current Temperature: <span id="current-temp"></span>F</p>
+            <img src="" alt="" id="weather-icon">
+            <p id="weather-desc"></p>
+            <p>Feels Like: <span id="feels-like"></span>F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <hr>
+            <p>3 Day Forecast</p>
+            <p><small>Temperatures listed here may not be 100% accurate</small></p>
+            <p><span id="tomorrow"></span>: <span id ="future-temp-1"></span>F</p>
+            <p><span id="two-days"></span>: <span id ="future-temp-2"></span>F</p>
+            <p><span id="three-days"></span>: <span id ="future-temp-3"></span>F</p>
+            <p><small>Weather provided by OpenWeatherMap.com</small></p>
         </div>
         <div class="temple-info">
             <h2>Temple Spotlight</h2>
+            <h3>Palmayra New York Temple</h3>
+            <p>Located in Palmayra, New York, this small temple is peaceful and small. Proxy ordinance sessions are available to schedule online. Live ordinances can be scheduled by contacting the temple.</p>
         </div>
         <div class="hotel-info">
             <h2>About Our Hotels</h2>
+            <p>Temple Inn and Suites strives to provide affordable, quality lodging for both temple patrons and temple missionaries in the northeastern area of the United States.</p>
+            <p>Our hotels provide various services to guests, such as free transportation to temples, childcare, and a family history center. More information about hotel services can be found on our Services page.</p>
         </div>
     </main>
     <footer>

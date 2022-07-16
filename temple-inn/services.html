@@ -23,14 +23,65 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="reserve.html">Reserve A Room</a></li>
             <li><a href="temples.html">Temples</a></li>
-            <li><a href="services.html">Hotel Services</a></li>
+            <li><a href="services.html" class="active">Hotel Services</a></li>
         </ul>
     </nav>
     </header>
-    <main>
-       <h1>General Hotel Services</h1>
-       <h1>Wedding Reception Services</h1>
-       <h1>Temple Missionary Services</h1>
+    <main class="service-page">
+        <div class="services">
+        <h1>General Hotel Services</h1>
+        <p>Temple Inn and Suites is proud to have a wide array of services and amenities for guests.</p>
+        <h2>Specialized Services</h2>
+        <ul>
+            <li>Free access to changing rooms and bathrooms for temple patrons (whether or not you're staying at the hotel)</li>
+            <li>Low-cost childcare for children of hotel guests, starting at $10/hour</li>
+            <li>Long-term accomodations for temple missionaries. More information below</li>
+            <li>Temple history themed reception and sitting area</li>
+            <li>A wedding reception hall. More information below</li>
+            <li>Family history center that support FamilySearch and ordinance work</li>
+        </ul>
+        <h2>Free Amenities</h2>
+        <ul>
+            <li>Continental breakfast from 6:00 AM to 10:00 AM</li>
+            <li>Exercise room</li>
+            <li>Indoor pool</li>
+            <li>High-speed WiFi</li>
+            <li>Smart TVs</li>
+            <li>Parking</li>
+            <li>Temple shuttle</li>
+            <li>Family history consulation</li>
+            <li>Family ordinance card printing</li>
+        </ul>
+        </div>
+        <div class="services">
+        <h1>Wedding Reception Services</h1>
+        <p>Temple Inn and Suites hotels have a wedding reception hall* that can be reserved by contacting our specialized wedding department.</p>
+        <p>Our wedding reception services are:</p>
+        <ul>
+            <li>Low-cost reception planning</li>
+            <li>Low-cost decorating service</li>
+            <li>Low-cost catering provided by the hotel (menu available upon request)</li>
+            <li>Optional: Kitchen access for food preparation and serving</li>
+            <li>Optional: Hotel-provided setup and takedown</li>
+        </ul>
+        <p>To book a wedding reception hall, please e-mail RECEPTION@templeinn.com</p>
+        </div>
+        <div class="services">
+        <h1>Temple Missionary Services</h1>
+        <p>Temple Inn and Suites offers long-term lodging for temple missionaries looking to stay close to their assigned temple. Our missionary suites include:</p>
+        <ul>
+            <li>Kitchenette or full kitchen for food preparation</li>
+            <li>Housekeeping two days per week</li>
+            <li>Living area with TV</li>
+            <li>Walk-in closet</li>
+        </ul>
+        <p>For more information, please submit your email here and we'll send you more details:</p>
+        <form>
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <input type="submit" value="Send Inquiry" class="submit-button" onclick="return confirm('Thank you for your inquiry! We\'ll get back to you within 1 business day.')">
+        </form>
+        </div>
     </main>
     <footer>
         <img src="images/temple-inn-logo.png" alt="Temple Inn & Suites logo">
