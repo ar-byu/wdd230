@@ -23,31 +23,6 @@ const modifiedDate = document.lastModified;
 document.getElementById("dateLastModified").innerHTML = modifiedDate;
 document.getElementById("dateLastModifiedMedium").innerHTML = modifiedDate;
 
-// Forecast Date Script
-const today = new Date();
-const tomorrow = today;
-tomorrow.setDate(today.getDate() + 1);
-tomorrowMonth = tomorrow.toLocaleString('default', {month:'long'});
-tomorrowDay = tomorrow.getDate()
-
-const twoDays = today;
-twoDays.setDate(today.getDate() + 1);
-twoDaysMonth = twoDays.toLocaleString('default', {month:'long'})
-twoDaysDay = twoDays.getDate()
-
-const threeDays = today;
-threeDays.setDate(today.getDate() + 1);
-threeDaysMonth = threeDays.toLocaleString('default', {month:'long'})
-threeDaysDay = threeDays.getDate()
-
-let tomorrowDate = document.getElementById("tomorrow");
-let twoDaysDate = document.getElementById("two-days");
-let threeDaysDate = document.getElementById("three-days");
-
-tomorrowDate.textContent = `${tomorrowMonth} ${tomorrowDay}`;
-twoDaysDate.textContent = `${twoDaysMonth} ${twoDaysDay}`;
-threeDaysDate.textContent = `${threeDaysMonth} ${threeDaysDay}`;
-
 // Temple Cards Script
 
 const requestURL = 'js/temples.json';
@@ -79,10 +54,13 @@ function displayTemple(temple) {
   let ordinance_sched = document.createElement('p');
   let session_sched = document.createElement('p');
   let closure_sched = document.createElement('p');
+  let likeButton = document.createElement('button')
 
   picture.setAttribute('src', temple.image);
   picture.setAttribute('alt', `${temple.name}`);
   picture.setAttribute('loading', 'lazy');
+  likeButton.setAttribute('id', 'liked')
+  likeButton.innerHTML = 'Like'
 
   name.textContent = `${temple.name}`
   address.textContent = `${temple.address}`;
@@ -112,11 +90,12 @@ function displayTemple(temple) {
   card.appendChild(ordinance_sched);
   card.appendChild(session_sched);
   card.appendChild(closure_sched);
+  card.appendChild(likeButton);
 
   document.querySelector('.temple-cards').appendChild(card);
 }
 
-// Weather Box Script
+// Weather Box Scripts
 
 const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
@@ -126,6 +105,7 @@ const humidity = document.getElementById("humidity");
 const tomorrowTemp = document.getElementById('future-temp-1');
 const twoDayTemp = document.getElementById('future-temp-2');
 const threeDayTemp = document.getElementById('future-temp-3');
+const weatherBanner = document.getElementById('banner');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?zip=10001,us&units=imperial&appid=ec8c11ef8c5eced3eaf0deb3383c8071';
 const url2 = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.0004&lon=-75.4999&units=imperial&appid=ec8c11ef8c5eced3eaf0deb3383c8071';
@@ -137,6 +117,7 @@ async function apiFetch() {
         const data = await response.json();
         console.log(data);
         displayResults(data);
+        showBanner(data);
       } else {
           throw Error(await response.text());
       }
@@ -177,7 +158,7 @@ function capitalize(str) {
 function displayResults(weatherData) {
     currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
     feelsLike.innerHTML = `${weatherData.main.feels_like.toFixed(0)}`;
-    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`
+    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -185,6 +166,15 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     weatherDesc.textContent = capitalize(desc);
+}
+
+function showBanner(weatherData) {
+  const weatherCondition = weatherData.weather[0].main;
+  console.log(weatherCondition)
+      if (weatherCondition === 'Thunderstorm' || weatherCondition === 'Snow') {
+        weatherBanner.style.display = 'block';
+        console.log("Got to here")
+      }
 }
 
 function displayResults2(weatherData) {
@@ -195,13 +185,14 @@ function displayResults2(weatherData) {
 
 // Weather Alert
 
-const banner = document.getElementById("banner");
-if (desc === "Thunderstorm" || desc === "Snow") {
-    banner.style.display = "block";
-}
-
 const close = document.querySelector("#close");
 
 close.addEventListener("click", () => {
     banner.style.display = "none";
+})
+
+const reserveButton = document.querySelector('#reserve')
+
+reserveButton.addEventListener("click", () => {
+  location.href = "reserve.html"
 })

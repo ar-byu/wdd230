@@ -148,3 +148,7 @@ nav ul.open {display:block;}
 .hero-box img {
     max-width: 100%;
 }
+
+#banner {
+    display: none;
+}
