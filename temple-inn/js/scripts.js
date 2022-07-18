@@ -59,8 +59,17 @@ function displayTemple(temple) {
   picture.setAttribute('src', temple.image);
   picture.setAttribute('alt', `${temple.name}`);
   picture.setAttribute('loading', 'lazy');
-  likeButton.setAttribute('id', 'liked')
-  likeButton.innerHTML = 'Like'
+
+  likeButton.setAttribute('class', 'like-button');
+  likeButton.textContent = '♡';
+  localStorage.setItem('Name','♡');
+  likeButton.onclick = addLike
+  //let buttonName = localStorage.getItem('Name');
+    
+  function addLike(){
+      localStorage.setItem('Name', 'Got to here')
+      likeButton.textContent = localStorage.getItem('Name')
+      }
 
   name.textContent = `${temple.name}`
   address.textContent = `${temple.address}`;
