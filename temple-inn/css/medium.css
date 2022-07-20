@@ -32,6 +32,40 @@
         font-size: x-large;
     }
 
+    .home-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 500px 1fr;
+    }
+
+    .site-name {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .hero-box {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .hotel-info {
+        grid-column: 1/3;
+    }
+
+    .hotel-info img {
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .hotel-info p {
+        padding: 10px;
+    }
+
+    .optional-trivia {
+        display: none;
+    }
+
     nav ul li {
         padding: 2%;
         margin-bottom: 2%;
