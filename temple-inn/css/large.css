@@ -86,6 +86,10 @@
         grid-row: 1;
     }
 
+    .optional-trivia {
+        display: block;
+    }
+
     .temple-info h3 {
         font-size: large;
     }
