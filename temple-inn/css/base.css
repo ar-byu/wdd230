@@ -13,11 +13,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     max-width: 900px;
     margin: 0 auto;
-    padding: 10px;
+    
 }
 
 p {
     font-family: 'Lora', serif;
+    font-size: larger;
 }
 
 /* Header and Footer Styling */
@@ -30,11 +31,10 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+    width: 100%;
 }
 
 header {
-    display: grid;
-    
     align-items: center;
     justify-items: center;
 }
@@ -51,7 +51,7 @@ footer img {
     width: 150px;
 }
 
-.header-title {
+.header {
     font-size: 10px;
     width: 160px;
     padding: 5px;
@@ -60,6 +60,8 @@ footer img {
 header img, footer img {
     border-radius: 50%;
 }
+
+
 
 /* Nav */
 
@@ -91,8 +93,8 @@ nav ul li {
     text-align: center;
     padding-top: 6px;
     flex: 1 1 auto;
-    height: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
+    font-size: large;
     border-top: 1px solid black;
 }
 
@@ -119,6 +121,12 @@ button {
     color: #555;
 }
 
+#hamburger-button {
+    color: black;
+    border: 1px solid black;
+    height: 100%;
+}
+
 nav ul {display:none;}
 nav ul.open {display:block;}
 
@@ -130,10 +138,144 @@ nav ul.open {display:block;}
 
 /* Main */
 
-.home-page div {
+main {
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 1%;
+}
+
+p {
+    padding: 0 10% 2%;
+}
+
+.weather-box p {
+    padding: none;
+    text-align: center;
+}
+
+.weather-box img {
+    margin-left: 45%;
+}
+
+.home-page div, .reserve div, .service-page div, .temple-card {
     border: 1px solid #555;
     margin-top: 1%;
     background-color: ivory;
+}
+
+.home-page div {
+    margin: 2%;
+}
+
+.temple-info img {
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 5px 7px 10px rgba(0,0,0,0.3);
+}
+
+.reserve p {
+    padding-top: 2%;
+}
+
+.reserve ul li, .service-page ul li {
+    list-style: inside;
+    font-family: 'Lora', serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+}
+
+.service-page div {
+    padding: 2%;
+}
+
+.service-page label {
+    font-family: 'Lora', serif;
+    font-size: larger;
+}
+
+.service-page input#email {
+    padding: 2%;
+    border: 1px solid #555;
+    width: 100%;
+    display: block;
+}
+
+.submit-button {
+    font-family: 'Berkshire Swash', cursive;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+    border: 1px solid #555;
+    margin-top: 2%;
+    background-color: rgba(70, 131, 180, 0.31);
+}
+
+.reserve div {
+    padding: 3%;
+}
+
+.reserve img, .service-page img {
+    width: 100%;
+    padding: none;
+    margin-top: 2%;
+}
+
+.reserve form {
+    font-family: 'Lora', serif;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.reserve form legend {
+    padding: .5rem;
+}
+
+.reserve form input {
+    margin-bottom: 10px;
+    display: block;
+    font-size: large;
+}
+
+.reserve form label.top {
+    display: block;
+    margin-left: 2%;
+}
+
+
+.reserve form input.top {
+    display: block;
+    padding: 1%;
+    margin-left: 2%;
+    width: 90%;
+    height: 40px;
+}
+
+.reserve form label.sbs {
+    display: block;
+    padding: 1%;
+}
+
+.reserve form input.sbs {
+    display: inline-block;
+    padding: 2%;
+    margin-left: 1%;
+}
+
+.reserve form label.date {
+    margin-left: 2%;
+}
+
+.reserve form select.dropdown {
+    margin-left: 2%;
+    padding: 1%;
 }
 
 .hotel-info {
@@ -143,12 +285,76 @@ nav ul.open {display:block;}
 .hero-box {
     background-color: none;
     border: none;
+    position: relative;
 }
 
 .hero-box img {
     max-width: 100%;
 }
 
+.hero-box button {
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    border: 1px solid #555;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.hotel-info img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    box-shadow: 5px 7px 10px rgba(0,0,0,0.3);
+}
+
 #banner {
+    display: none;
+}
+
+h4 {
+    margin-left: 10%;
+    padding-bottom: 1%;
+    font-size: larger;
+}
+
+.temple-cards {
+    margin-bottom: 10px;
+}
+
+.temple-image {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    box-shadow: 5px 7px 10px rgba(0,0,0,0.3);
+    background: none;
+}
+
+.like-button {
+    font-size: 64px;
+    display: block;
+}
+
+.like-buttonliked {
+    font-size: 64px;
+}
+
+
+/* Footer Style */
+
+footer p {
+    font-size: medium;
+}
+
+.location {
+    text-align: center;
+}
+
+.small-copyright {
+    text-align: center;
+}
+
+.medium-copyright {
     display: none;
 }

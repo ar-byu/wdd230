@@ -1,0 +1,74 @@
+@media only screen and (min-width: 35rem) {
+    nav {
+        width: 100%;
+    }
+
+    #hamburger-button {
+        border: 1px solid black;
+        height: 100%;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .reserve form label {
+        font-size: x-large;
+    }
+
+    body {
+        max-width: 1000px;
+    }
+
+    p {
+        font-size: x-large;
+    }
+
+    body h2, h3, h4 {
+        font-size: xx-large;
+    }
+
+    .reserve ul li, .service-page ul li, nav ul li {
+        font-size: x-large;
+    }
+
+    nav ul li {
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    .temple-card {
+        margin: 5%;
+    }
+
+    .reserve form input.top {
+        font-size: x-large;
+        padding: 20px;
+    }
+
+    select.dropdown {
+        width: 90%;
+        font-size: x-large;
+    }
+
+    select option {
+        font-size: large;
+    }
+
+    .submit-button {
+        height: 100px;
+        background-color: rgba(70, 131, 180, 0.31);
+    }
+    
+    .submit-button[value] {
+        font-size: xx-large;
+    }
+
+    .service-page label, .service-page input {
+        font-size: x-large;
+    }
+
+    #weather-icon {
+        margin-left: 47%;
+    }
+}

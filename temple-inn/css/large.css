@@ -1,0 +1,243 @@
+@media only screen and (min-width: 64rem) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 200px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header h1 {
+        margin-left: -350px;
+    }
+
+    nav {
+        grid-column: 1/5;
+        width: 90%;
+        grid-row: 2;
+        background-color: steelblue;
+    }
+
+    nav ul {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        height: 75px;
+    }
+
+    nav ul li {
+        padding-top: 1.5%;
+        border-right: 1px solid black;
+        height: 100%;
+        display: block;
+    }
+
+    header button {display: none}
+
+    body {
+        max-width: 1475px;
+        padding: 0;
+    }
+
+    .site-name {display: none}
+
+    .home-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 500px;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .hero-box {
+        grid-column: 1/4;
+        grid-row: 1;
+        background-color: transparent;
+        border: none;
+    }
+
+    .hero-box img {
+        height: 100%;
+    }
+
+    .hero-box button {
+        width: 90%;
+        margin-left: 5%;
+        height: 25%;
+    }
+
+    .hero-box button:hover {
+        cursor: pointer;
+    }
+
+    .weather-box {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .temple-info {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .temple-info h3 {
+        font-size: large;
+    }
+
+    .hotel-info {
+        grid-row: 2;
+        grid-column: 2/5;
+    }
+
+    .hotel-info img {
+        width: 25%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .hotel-info p {
+        font-size: large;
+    }
+
+    .reserve {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 700px;
+        grid-gap: 2%;
+    }
+
+    .reserve .small {
+        display: none;
+    }
+
+    .reserve .big {
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+
+    .reserve picture {
+        grid-row: 3;
+        grid-column: 1/5;
+    }
+
+    .room-info {
+        grid-row: 2;
+    }
+
+    .room-info:nth-of-type(1) {grid-column: 1/3;}
+    .room-info:nth-of-type(2) {grid-column: 3/5;}
+
+    .reservation-form {
+        grid-row: 3;
+        grid-column: 2/4;
+    }
+
+    .reserve form label {
+        font-size: medium;
+    }
+
+    .reserve form input.top {
+        padding: none;
+        font-size: medium;
+    }
+
+    .reserve form label.top {
+        margin-left: 2%;
+    }
+
+    .reserve form select {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+
+    .reserve ul li, .services ul li {
+        font-size: medium;
+    }
+
+    footer {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .small-copyright {
+        display: none;
+    }
+
+    .medium-copyright {
+        display: block;
+    }
+
+    .service-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 1fr;
+        grid-gap: 10px;
+    }
+
+    .service-img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .services:nth-of-type(1) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .reception-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .services:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .suite-img {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .services:nth-of-type(3) {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .services input, .services label {
+        font-size: medium;
+    }
+
+    .services .submit-button {
+        height: 50px;
+    }
+
+    .submit-button:hover, .temple-card button:hover {
+        cursor: pointer;
+    }
+
+    .temple-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1000px 975px;
+        grid-gap: 10px;
+    }
+
+    .temple-card img {
+        height: 30%;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .temple-card button, .temple-card .like-buttonliked {
+        margin-top: -160px;
+        position: static;
+    }
+}

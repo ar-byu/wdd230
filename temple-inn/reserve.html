@@ -27,32 +27,37 @@
         </ul>
     </nav>
     </header>
-    <main>
-        <h1>Reserve Your Room</h1>
+    <main class="reserve">
+        <h1 class="big">Reserve Your Room</h1>
+            <picture>
+                <source media="(max-width: 512px)" srcset="images/bed-and-window-small.jpg">
+                <img src="images/bed-and-window-small.jpg" alt="the corner of a hotel bed with a window in the background">
+            </picture>
         <div class="room-info">
+            <h1 class="small">Reserve Your Room</h1>
             <h2>Temple Patron Rooms</h2>
             <p>All offered rooms have a smart TV and desk.</p>
-            <p>Standard Room:</p>
+            <p><strong>Standard Room:</strong></p>
             <ul>
                 <li>1 queen-size bed OR 2 full-size beds</li>
                 <li>Full-size sofa bed/day bed</li>
                 <li>Mini fridge/freezer and microwave</li>
                 <li>Full bathroom</li>
             </ul>
-            <p>Quad Room:</p>
+            <p><strong>Quad Room</strong></p>
             <ul>
                 <li>2 queen-size beds</li>
                 <li>Full-size sofa bed/day bed</li>
                 <li>Mini fridge/freezer and microwave</li>
                 <li>Full bathroom</li>
             </ul>
-            <p>Mini Suite:</p>
+            <p><strong>Mini Suite:</strong></p>
             <ul>
                 <li>Kitchenette with full fridge, microwave, inset countertop burner, sink</li>
                 <li>King-size bedroom with closet, full bathroom</li>
                 <li>Sitting/dining room with full-size sofa bed/day bed, half bathroom</li>
             </ul>
-            <p>Full Suite:</p>
+            <p><strong>Full Suite:</strong></p>
             <ul>
                 <li>Full kitchen with full fridge, microwave, stove, oven, double-basin sink, cabinets</li>
                 <li>King-size bedroom with walk-in closet, full bathroom</li>
@@ -61,22 +66,22 @@
                 <li>Sitting area with half bathroom</li>
             </ul>
         </div>
-        <div class="room-info"></div>
+        <div class="room-info">
             <h2>Missionary Rooms</h2>
-            <p>Basic Suite:</p>
+            <p><strong>Basic Suite:</strong></p>
             <ul>
                 <li>Kitchenette with full fridge, microwave, inset countertop burner, sink</li>
                 <li>King-size bedroom with walk-in closet, full bathroom</li>
                 <li>Sitting/dining room with full-size sofa bed/day bed, half bathroom</li>
             </ul>
-            <p>Standard Suite:</p>
+            <p><strong>Standard Suite:</strong></p>
             <ul>
                 <li>Full kitchen with full fridge, microwave, stove, oven, double-basin sink, cabinets</li>
                 <li>King-size bedroom with walk-in closet, full bathroom</li>
                 <li>Dining area</li>
                 <li>Sitting area with half bathroom</li>
             </ul>
-            <p>Luxury Suite:</p>
+            <p><strong>Luxury Suite:</strong></p>
             <ul>
                 <li>Full kitchen with full fridge, microwave, stove, oven, double-basin sink, cabinets</li>
                 <li>King-size bedroom with walk-in closet, full bathroom</li>
@@ -86,21 +91,21 @@
                 <li>Optional: Direct outdoor access</li>
             </ul>
         </div>
-       <h2>Booking</h2>
        <div class="reservation-form">
+        <h2>Booking</h2>
         <form>
             <fieldset>
-                <legend>Booking Information</legend>
+                <legend><strong>Booking Information</strong></legend>
                 <fieldset>
-                    <legend>Temple Patrons</legend>
-                    <label for="guest-checkin">Check-In Date</label>
-                    <input type="date" id="guest-checkin" name="date">
-                    <label for="adults"># of Adults</label>
-                    <input type="number" id="adults" name="number" placeholder="ex. 2">
-                    <label for="children"># of Children (if applicable)</label>
-                    <input type="number" id="children" name="number" placeholder="ex. 2">
-                    <label for="guest-location">Temple</label>
-                        <select id="guest-location" name="temples">
+                    <legend><strong>Temple Patrons</strong></legend>
+                    <label for="guest-checkin" class="date">Check-In Date</label>
+                    <input type="date" id="guest-checkin" name="date" class="sbs">
+                    <label for="adults" class="top"># of Adults</label>
+                    <input type="number" id="adults" name="number" placeholder="ex. 2" class="top">
+                    <label for="children" class="top"># of Children (if applicable)</label>
+                    <input type="number" id="children" name="number" placeholder="ex. 2" class="top">
+                    <label for="guest-location" class="top">Temple</label>
+                        <select id="guest-location" name="temples" class="dropdown">
                             <option value="none">Select option...</option>
                             <option value="philadelphia">Philadelphia, PA</option>
                             <option value="washington">Washington D.C.</option>
@@ -109,25 +114,25 @@
                             <option value="boston">Boston, MA</option>
                             <option value="hartford">Hartford, CT</option>
                         </select>
-                    <input type="radio" id="basic" value="basic">
-                    <label for="basic">Standard Room - $75/night</label>
-                    <input type="radio" id="middle" value="middle">
-                    <label for="middle">Quad Room - $100/night</label>
-                    <input type="radio" id="minisuite" value="minisuite">
-                    <label for="minisuite">Mini Suite - $150/night</label>
-                    <input type="radio" id="suite" value="suite">
-                    <label for="suite">Full Suite - $200/night</label>
-                    <label for="nights">Number of Nights</label>
-                    <input type="number" id="nights" placeholder="1">
+                    <label for="nights" class="top">Number of Nights</label>
+                    <input type="number" id="nights" placeholder="1"  class="top">
+                    <label for="basic" class="sbs"><input type="radio" id="basic" name="guest-room" value="basic" class="sbs">Standard Room - $75/night</label>
+                    <label for="middle" class="sbs"><input type="radio" id="middle" name="guest-room" value="middle" class="sbs">Quad Room - $100/night</label>
+                    <label for="minisuite" class="sbs"><input type="radio" id="minisuite" name="guest-room" value="minisuite"class="sbs">Mini Suite - $150/night</label>
+                    <label for="suite" class="sbs"><input type="radio" id="suite" name="guest-room" value="suite" class="sbs">Full Suite - $200/night</label>
+                    
                 </fieldset>
                 <fieldset>
-                    <legend>Temple Missionaries</legend>
-                    <label for="mission-arrival">Check-In Date</label>
-                    <input type="date" id="mission-arrival" name="date">
-                    <label for="mission-checkout">Mission Duration (in months)</label>
-                    <input type="number" id="mission-checkout" name="date">
-                    <label for="mission-location">Temple</label>
-                        <select id="mission-location" name="temples">
+                    <legend><strong>Temple Missionaries</strong></legend>
+                    <label for="mission-arrival" class="date">Check-In Date</label>
+                    <input type="date" id="mission-arrival" name="date" class="sbs">
+                    <label for="mission-checkout" class="top">Mission Duration (in months)</label>
+                    <input type="number" id="mission-checkout" name="date" class="top">
+                    <label for="bsc-suite" class="sbs"><input type="radio" id="bsc-suite" name="mission-room" value="basic" class="sbs">Basic Suite - $750/month</label>
+                    <label for="stdrd-suite" class="sbs"><input type="radio" id="stdrd-suite" name="mission-room" value="standard" class="sbs">Standard Suite - $1500/month</label>
+                    <label for="lux-suite" class="sbs"><input type="radio" id="lux-suite" name="mission-room" value="luxury" class="sbs">Luxury Suite - $3000/month</label>
+                    <label for="mission-location" class="top">Temple</label>
+                        <select id="mission-location" name="temples" class="dropdown">
                             <option value="none">Select option...</option>
                             <option value="philadelphia">Philadelphia, PA</option>
                             <option value="washington">Washington D.C.</option>
@@ -136,47 +141,41 @@
                             <option value="boston">Boston, MA</option>
                             <option value="hartford">Hartford, CT</option>
                         </select>
-                        <input type="radio" id="bsc-suite" value="basic">
-                        <label for="bsc-suite">Basic Suite - $750/month</label>
-                        <input type="radio" id="stdrd-suite" value="standard">
-                        <label for="stdrd-suite">Standard Suite - $1500/month</label>
-                        <input type="radio" id="lux-suite" value="luxury">
-                        <label for="lux-suite">Luxury Suite - $3000/month</label>
-                </fieldset>
+                        </fieldset>
             </fieldset>
             <fieldset>
-                <legend>Billing Information</legend>
+                <legend><strong>Billing Information</strong></legend>
                 <fieldset>
-                    <legend>Customer Information</legend>
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="John" pattern="[A-Za-z]" required>
-                    <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" placeholder="Smith" pattern="[A-Za-z]" required>
-                    <label for="adr">Street Address:</label>
-                    <input type="text" id="adr" name="address" placeholder="123 Example Street" pattern="[A-Za-z0-9]" required>
-                    <label for="city">City:</label>
-                    <input type="text" id="city" name="city" placeholder="New York" pattern="[A-Za-z]" required>
-                    <label for="state">State:</label>
-                    <input type="text" id="state" name="state" placeholder="NY" pattern="[A-Za-z]{2}" required>
-                    <label for="zip">Zipcode:</label>
-                    <input type="text" id="zip" name="zip" placeholder="17406" pattern="[0-9]" required>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <label for="tel">Phone Number</label>
-                    <input type="tel" id="tel" name="tel" placeholder="1234562468" pattern="[0-9]{10}">
+                    <legend><strong>Customer Information</strong></legend>
+                    <label for="fname" class="top">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John" pattern="[A-Za-z]" class="top" required>
+                    <label for="lname" class="top">Last Name:</label>
+                    <input type="text" name="lname" placeholder="Smith" pattern="[A-Za-z]" class="top" required>
+                    <label for="adr" class="top">Street Address:</label>
+                    <input type="text" id="adr" name="address" placeholder="123 Example Street" pattern="[A-Za-z0-9]" class="top" required>
+                    <label for="city" class="top">City:</label>
+                    <input type="text" id="city" name="city" placeholder="New York" pattern="[A-Za-z]" class="top" required>
+                    <label for="state" class="top">State:</label>
+                    <input type="text" id="state" name="state" placeholder="NY" pattern="[A-Za-z]{2}" class="top" required>
+                    <label for="zip" class="top">Zipcode:</label>
+                    <input type="text" id="zip" name="zip" placeholder="17406" pattern="[0-9]" class="top" required>
+                    <label for="email" class="top">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="top" required>
+                    <label for="tel" class="top">Phone Number</label>
+                    <input type="tel" id="tel" name="tel" placeholder="1234562468" pattern="[0-9]{10}" class="top">
                 </fieldset>
                 <fieldset>
-                    <legend>Payment Information</legend>
+                    <legend><strong>Payment Information</strong></legend>
                     <label for="cname">Name On Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="John Smith" pattern="[A-Za-z]" required>
+                    <input type="text" id="cname" name="cardname" placeholder="John Smith" pattern="[A-Za-z]" class="top" required>
                     <label for="ccnum">Card Number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1234-5678-1111-2222" required>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1234-5678-1111-2222" class="top" required>
                     <label for="expmonth">Expiry Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September" class="top" required>
                     <label for="expyear">Expiry Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2023" required>
+                    <input type="text" id="expyear" name="expyear" placeholder="2023" class="top" required>
                     <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="111" required>
+                    <input type="text" id="cvv" name="cvv" placeholder="111" class="top" required>
                 </fieldset>
             </fieldset>
             <input type="submit" value="Book Your Stay" class="submit-button" onclick="return confirm('Thank you for choosing Temple Inn & Suites! You will receive an email confirmation shortly.')">
@@ -189,6 +188,9 @@
             <p>4800 Montgomery Ln #300</p>
             <p>Bethesda, MD 20814</p>
             <a href="https://goo.gl/maps/faptK9d2nmqTWnc7A">Google Maps</a>
+        </div>
+        <div class="disclaimers">
+            <p>This website uses images from thechurchofjesuschristoflatterdaysaints.com, as well as various free-to-use stock photos from Unsplash.</p>
         </div>
         <div class="copyright-box">
             <div class="small-copyright">

@@ -26,7 +26,7 @@ document.getElementById("dateLastModifiedMedium").innerHTML = modifiedDate;
 // Temple Cards Script
 
 const requestURL = 'js/temples.json';
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('.temple-cards');
 
 fetch(requestURL) 
   .then(function (response) {
@@ -39,7 +39,7 @@ fetch(requestURL)
 ;
 
 function displayTemple(temple) {
-  let card = document.createElement('section');
+  let card = document.createElement('div');
   let name = document.createElement('h2');
   let picture = document.createElement('img');
   let address = document.createElement('p');
@@ -54,27 +54,32 @@ function displayTemple(temple) {
   let ordinance_sched = document.createElement('p');
   let session_sched = document.createElement('p');
   let closure_sched = document.createElement('p');
-  let likeButton = document.createElement('button')
+  let likeButton = document.createElement('button');
+
+  card.setAttribute('class', 'temple-card');
 
   picture.setAttribute('src', temple.image);
   picture.setAttribute('alt', `${temple.name}`);
+  picture.setAttribute('class', 'temple-image')
   picture.setAttribute('loading', 'lazy');
 
-  likeButton.setAttribute('class', 'like-button');
-  likeButton.textContent = '♡';
-  localStorage.setItem('Name','♡');
-  likeButton.onclick = addLike
-  //let buttonName = localStorage.getItem('Name');
-    
-  function addLike(){
-      localStorage.setItem('Name', 'Got to here')
-      likeButton.textContent = localStorage.getItem('Name')
-      }
+  likeButton.id = temple.id
+  likeButton.setAttribute('class', 'like-button')
+  if (localStorage.getItem(likeButton.id) == 'liked' )
+  {likeButton.textContent = '♥'}
+  else {likeButton.textContent = '♡'}
+  
+  likeButton.onclick = (function () {
+    likeButton.textContent = '♥'
+    document.getElementById(likeButton.id).className += 'liked'
+    localStorage.setItem(likeButton.id, 'liked')
+    console.log(localStorage.getItem(likeButton.id))
+  })
 
   name.textContent = `${temple.name}`
-  address.textContent = `${temple.address}`;
-  phone.textContent = `${temple.phone}`;
-  email.textContent = `${temple.email}`;
+  address.textContent = `Address: ${temple.address}`;
+  phone.textContent = `Phone: ${temple.phone}`;
+  email.textContent = `Email: ${temple.email}`;
   services.textContent = 'Services:';
   clothing.textContent = `Clothing Rental: ${temple.services[0]}`;
   cafeteria.textContent = `Cafeteria: ${temple.services[1]}`;
@@ -99,7 +104,7 @@ function displayTemple(temple) {
   card.appendChild(ordinance_sched);
   card.appendChild(session_sched);
   card.appendChild(closure_sched);
-  card.appendChild(likeButton);
+  card.appendChild(likeButton)
 
   document.querySelector('.temple-cards').appendChild(card);
 }

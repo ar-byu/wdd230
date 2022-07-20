@@ -1,6 +1,7 @@
 {
     "temples": [
         {
+            "id": "1",
             "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/philadelphia-pennsylvania/400x640/philadelphia-pennsylvania-temple-1751627-wallpaper.jpg",
             "name": "Philadelphia Pennsylvania Temple",
             "address": "1739 Vine St, Philadelphia PA 19103, United States",
@@ -13,6 +14,7 @@
             "closure": "19 September 2022 - 10 October 2022 | 24 December 2022 - 25 December 2022 | 31 December 2022"
         },
         {
+            "id": "2",
             "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x640/washington-d-c-temple-lds-930875-wallpaper.jpg",
             "name": "Washington D.C. Temple",
             "address": "9900 Stoneybrook Dr, Kensington MD 20895-3199, United States",
@@ -25,6 +27,7 @@
             "closure": "Currently closed for renovation"
         },
         {
+            "id":"3",
             "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manhattan-new-york/400x640/manhattan-temple-lds-263460-wallpaper.jpg",
             "name": "Manhattan New York Temple",
             "address": "125 Columbus Ave, Fourth Floor, New York NY 10023-6514, United States",
@@ -37,6 +40,7 @@
             "closure": "25 July 2022 - 8 August 2022 | 1 October 2022 - 2 October 2022 | 24 November 2022 - 25 November 2022 | 24 December 2022 | 31 December 2022"
         },
         {
+            "id":"4",
             "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/palmyra-new-york/400x640/palmyra-temple-766540-wallpaper.jpg",
             "name": "Palmayra New York Temple",
             "address": "2720 Temple Rd, Palmyra NY 14522-9573, United States",
@@ -49,6 +53,7 @@
             "closure": "12 September 2022 - 26 September 2022 | 1 October 2022 | 24 November 2022 | 24 December 2022 | 21 December 2022"
         },
         {
+            "id":"5",
             "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hartford-connecticut/2018/400x250/Hartford-Temple01.jpg",
             "name": "Hartford Connecticut Temple",
             "address": "2 Central Wy, Farmington CT 06032, United States",
@@ -61,6 +66,7 @@
             "closure": "5 September 2022 - 28 November 2022 | 24 December 2022 | 21 December 2022"
         },
         {
+            "id":"6",
             "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boston-massachusetts/400x640/boston-temple-lds-926960-wallpaper.jpg",
             "name": "Boston Massachusetts Temple",
             "address": "100 Hinckley Wy, Belmont MA 02478-2135, United States",
